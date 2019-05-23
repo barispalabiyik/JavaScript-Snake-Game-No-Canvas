@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>No-Canvas Snake BarisPal</title>
+<style>
+    html {
+        text-align: center;
+        font-family: Helvetica, Arial, Helvetica, sans-serif;
+        background-color: rgb(114, 180, 224);
+    }
+
+    #board {
+        width: calc(26 * 24px);
+        margin: auto;
+    }
+
+    #board div {
+        background-color: rgb(163, 111, 50);
+        border: 1px solid rgb(73, 69, 69);
+        box-sizing: border-box;
+        float: left;
+        width: 24px;
+        height: 24px;
+    }
+
+    #board .snake {
+        background-color: rgb(74, 241, 23);
+    }
+
+    #board .food {
+        background-color: rgb(233, 14, 69);
+    }
+    #scores{
+        color: red;
+    }
+    h1{
+        color: rgb(255, 255, 255);
+    }
+    h2{
+        color: white;
+    }
+    #latest{
+        color: orangered;
+    }
+</style>
+</head>
+<body onload="firstGame()" onkeydown="enterKey(event)">
+    <h1>SnakeGame-BarisPal</h1>
+    <br>
+    <h2>YOUR SCORE <br> <span id="scores"></span> </h2>
+    <div id="board"></div>
+
+    <script type="text/javascript" src="snakejs.js">
+
+
+    </script>
+
+
+</body>
+</html>
